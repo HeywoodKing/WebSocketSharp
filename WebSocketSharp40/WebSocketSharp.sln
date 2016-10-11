@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketSharpUtil", "WebSo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketSharpClientDemo", "WebSocketSharpClientDemo\WebSocketSharpClientDemo.csproj", "{4A25A40E-AFF1-4306-BC93-0FB4F31F681F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,16 @@ Global
 		{4A25A40E-AFF1-4306-BC93-0FB4F31F681F}.Release|Mixed Platforms.Build.0 = Release|x86
 		{4A25A40E-AFF1-4306-BC93-0FB4F31F681F}.Release|x86.ActiveCfg = Release|x86
 		{4A25A40E-AFF1-4306-BC93-0FB4F31F681F}.Release|x86.Build.0 = Release|x86
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8ED64B83-9DF9-46F9-A2A4-532A80EB3793}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

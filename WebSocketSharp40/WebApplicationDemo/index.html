@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JSocket</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-xs-center">Hello World</h1>
+		<div class="form-inline">
+	        <div class="form-group has-success">
+			  	<label class="control-label" for="inputSuccess1"></label>
+			  	<input type="text" class="form-control" id="inputMsg">
+			  	<button type="button" id="btnSend" class="btn btn-primary">发送</button>
+			  	<button type="button" id="btnConnect" class="btn btn-primary">连接服务器</button>
+			</div>	
+		</div>
+		<div id="result"></div>
+	</div>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="./js/jquery-3.1.0.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="./js/jsocket.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		$("#inputMsg").focus();
+
+		$("#btnConnect").on("click", function(){
+			JSocket.init();
+		});
+
+		$("#btnSend").on("click", function(){
+			send();
+		});
+
+		$("#inputMsg").on("keyup", function(e){
+			if(e.keyCode == 13){
+				send();
+			}
+		});
+
+		var send = function (){
+			JSocket.sendMessage($.trim($("#inputMsg").val()));
+			$("#inputMsg").val('');
+			$("#inputMsg").focus();
+		}
+	});
+	</script>
+</body>
+</html>
