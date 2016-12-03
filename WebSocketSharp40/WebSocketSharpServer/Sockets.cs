@@ -13,6 +13,7 @@ namespace WebSocketSharp
     /// <summary>
     /// Socket连接，Socket请求方式
     /// author:chaix
+    /// date:2016-09-12
     /// </summary>
     public class Sockets
     {
